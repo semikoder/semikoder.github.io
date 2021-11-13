@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='3D FPS game'><title>Awaken Sentinel</title>
+
+<link rel='canonical' href='https://semikoder.github.io/p/awaken-sentinel/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Awaken Sentinel'>
+<meta property='og:description' content='3D FPS game'>
+<meta property='og:url' content='https://semikoder.github.io/p/awaken-sentinel/'>
+<meta property='og:site_name' content='SemiKoder'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='3D' /><meta property='article:published_time' content='2017-08-10T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2017-08-10T00:00:00&#43;00:00'/><meta property='og:image' content='https://semikoder.github.io/p/awaken-sentinel/graphicsupdate.PNG' />
+<meta name="twitter:title" content="Awaken Sentinel">
+<meta name="twitter:description" content="3D FPS game"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://semikoder.github.io/p/awaken-sentinel/graphicsupdate.PNG' />
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🐣</span>
+                
+            </figure>
+            
+        
+        
+        <h1 class="site-name"><a href="/">SemiKoder</a></h1>
+        <h2 class="site-description">SemiKoder&#39;s Portfolio</h2><ol class="social-menu">
+                
+                    <li>
+                        <a 
+                            href='https://github.com/SemiKoder'
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+            </ol></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/projects' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/awaken-sentinel/">
+                <img src="/p/awaken-sentinel/graphicsupdate_hu64b50e11776c16104a4e03122afb619f_1350265_800x0_resize_box_3.PNG"
+                        srcset="/p/awaken-sentinel/graphicsupdate_hu64b50e11776c16104a4e03122afb619f_1350265_800x0_resize_box_3.PNG 800w, /p/awaken-sentinel/graphicsupdate_hu64b50e11776c16104a4e03122afb619f_1350265_1600x0_resize_box_3.PNG 1600w"
+                        width="800" 
+                        height="355" 
+                        loading="lazy"
+                        alt="Featured image of post Awaken Sentinel" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/unity/" style="background-color: #2a9d8f; color: #fff;">
+                Unity
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/awaken-sentinel/">Awaken Sentinel</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        3D FPS game
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 10, 2017</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    7 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<em><strong>DISCONTINUED</strong></em>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+<p><em><strong>Keep in mind I&rsquo;m writing this a year after I stopped making this game. I didn&rsquo;t bother with portfolio or whatsoever back then.</strong></em></p>
+<p>Awaken Sentinel is the first game that I started making seriously on Unity game engine. It&rsquo;s a multiplier FPS with open-world aspects. I can&rsquo;t provide any further information to the game, nor the story, as the whole project started just because I wanted to learn something and I didn&rsquo;t plan on publishing at all/have the finished product.
+I worked on this game a bit more than a year. I was interested in FPS games back then, so I wanted to create my own FPS game. That&rsquo;s literally how it started. I just wanted to make an FPS game. It took so long for me to make such small progress because I didn&rsquo;t plan anything and I kept changing throughout the development. I changed the concept/theme multiple times.
+I was also very new to the whole game development. I didn&rsquo;t know where to start/how to start/how to make a successful game. I first started making this game alone by myself, but later when I realized I needed some help I recruited several developers to work on the game with me. I especially needed assistance regarding modeling, animations and sound designs as I had no previous experiences with them.
+As I already mentioned, I was a newbie in game development when I started making this game. I had ambitious goals (this is something that every starter indie game developers have I believe. They try to replicate their favorite game.) on the game, Awaken Sentinel. Something I learned throughout this game development, which is also something that I will never forget is, <strong>never start with big ambitious goals when you&rsquo;re just starting out</strong>. I realized this after attempting to create big games 2 - 3 times. It&rsquo;s highly probable that you will lose your motivation quite shortly after. Start with something small, put your hands on the end product of yours. This will get you more motivation to create bigger projects and complete them.
+However, as I mentioned, Awaken Sentinel was like the first serious game that I was developing. I didn&rsquo;t want to let go after developing for like a couple of months.</p>
+<p>Awaken Sentinel is formally known as Color Wars. The original idea was that different colored people would fight as a team together, but I ended up discarding this whole concept, as it could be offensive in a certain way.</p>
+<p><em><strong>WARNING: Before you continue reading, please note that I was new to the whole game development industry. I didn&rsquo;t know/care much about the copyright and whole licensing. Most of the assets (animations, models, but not scripts/code) that I used on this game are ripped off from another game or downloaded without giving proper credit. I didn&rsquo;t bother that much at that point as I wanted to replace those models with the models that were created by my team back then.</strong></em></p>
+<p><em>I only started taking a screenshot after around half a year later. Early screenshots are not available.</em></p>
+<p>FPS mechanics were quite easy for me to understand and implement within Unity. Not only there&rsquo;s a lot of features and functions I could use directly, but there were also a lot of Unity tutorials / well-written documentation I could easily follow. Using those two resources, I managed to create a basic FPS shooter without any problem. 
+Although, Unity was still one of the &ldquo;newer&rdquo; engines back then. FPS tutorials were not that in-depth, to say the least. Tutorials only covered the basics. Any more in-depth complicated functions had to be made purely by myself by looking at the documentation and trying it out.</p>
+<p>Because this was FPS and I was super excited about the whole multiplayer thing back then, I wanted to integrate the multiplayer system to my game. I did make a successful functional multiplayer functionality using Photon networking (basically, an awesome multiplayer networking solution for different game engines, particularly Unity), but I quickly faced one problem. Resources. Multiplayer means, that there needs to be a host computer that hosts the whole multiplayer server so the clients can communicate with each other through the host. This means, that I would need to have the server of some sort running 24/7. No one wants to sacrifice their computer and host my game&rsquo;s server 24/7. This means I had to buy a server (server is not free&hellip;). It&rsquo;s not a one-time purchase either. I had to pay around 10 dollars per month (this was the cheapest plan). But here&rsquo;s the thing: is it worth it for me to spend 10 dollars per month on a server for a game that no one knows about and it&rsquo;s not even released?
+I ended up not buying a server at all. This also contributed to the end of this game development.</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 150; 
+			flex-basis: 361px"
+	>
+	<a href="/p/awaken-sentinel/multiplayerdemo.PNG" data-size="725x481">
+		<img src="/p/awaken-sentinel/multiplayerdemo.PNG"
+			width="725"
+			height="481"
+			srcset="/p/awaken-sentinel/multiplayerdemo_hu4b98a421cc7b6f0832f51e9bbf55e107_553517_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/multiplayerdemo_hu4b98a421cc7b6f0832f51e9bbf55e107_553517_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="MultiplayerDemo">
+	</a>
+	
+	<figcaption>MultiplayerDemo</figcaption>
+	
+</figure>
+(The character is t-posing because the animation synchronization was still in progress. I just noticed the character looks small&hellip;)</p>
+<p>I also made a login system using <em>&ldquo;Database Control (Free)&quot;</em> which I downloaded through Unity&rsquo;s asset store. It was a free solution for me to create a login database system. This, however, does not have any encryption to the database whatsoever, meaning that there&rsquo;s a high risk of it getting hacked/leaked to the public. I wasn&rsquo;t concerned about the whole security part, though. I eventually wanted to upgrade it to a more safer solution once I earn some money through the game I published.</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 318; 
+			flex-basis: 764px"
+	>
+	<a href="/p/awaken-sentinel/multiplayer_login.PNG" data-size="1612x506">
+		<img src="/p/awaken-sentinel/multiplayer_login.PNG"
+			width="1612"
+			height="506"
+			srcset="/p/awaken-sentinel/multiplayer_login_hu972c968ef8e656d78f2a25abff51941d_713913_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/multiplayer_login_hu972c968ef8e656d78f2a25abff51941d_713913_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="MultiplayerLogin">
+	</a>
+	
+	<figcaption>MultiplayerLogin</figcaption>
+	
+</figure></p>
+<p>After developing for some while, I wanted to work on the graphical side of the game.
+At the very beginning, without any post-processing and proper lighting setup, this is how the game looked like:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 226; 
+			flex-basis: 543px"
+	>
+	<a href="/p/awaken-sentinel/before.PNG" data-size="1441x636">
+		<img src="/p/awaken-sentinel/before.PNG"
+			width="1441"
+			height="636"
+			srcset="/p/awaken-sentinel/before_hu2e51576c7ddba0d97de3abb0d2606854_1097902_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/before_hu2e51576c7ddba0d97de3abb0d2606854_1097902_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="Before">
+	</a>
+	
+	<figcaption>Before</figcaption>
+	
+</figure></p>
+<p>After proper lighting configuration and post-processing, this is how it looked:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 225; 
+			flex-basis: 541px"
+	>
+	<a href="/p/awaken-sentinel/graphicsupdate.PNG" data-size="1455x645">
+		<img src="/p/awaken-sentinel/graphicsupdate.PNG"
+			width="1455"
+			height="645"
+			srcset="/p/awaken-sentinel/graphicsupdate_hu64b50e11776c16104a4e03122afb619f_1350265_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/graphicsupdate_hu64b50e11776c16104a4e03122afb619f_1350265_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="After">
+	</a>
+	
+	<figcaption>After</figcaption>
+	
+</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 230; 
+			flex-basis: 552px"
+	>
+	<a href="/p/awaken-sentinel/graphicsupdate02.PNG" data-size="1479x643">
+		<img src="/p/awaken-sentinel/graphicsupdate02.PNG"
+			width="1479"
+			height="643"
+			srcset="/p/awaken-sentinel/graphicsupdate02_hu3ac660e711508d43199ea341f6336238_1399306_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/graphicsupdate02_hu3ac660e711508d43199ea341f6336238_1399306_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="After2">
+	</a>
+	
+	<figcaption>After2</figcaption>
+	
+</figure></p>
+<p>I know there are still a lot of major issues with the lighting and post-processing configs. Especially the vignette that&rsquo;s so extreme. Anti-aliasing on the text <em>&ldquo;Fall Damage&rdquo;</em> as well as on the trees can be improved significantly. 
+<em>NOTE: Following screenshots and video is taken BEFORE the graphics update.</em></p>
+<p>One feature I made that I was proud of was real-time scope. In case you don&rsquo;t know what this is, here&rsquo;s how it looks like:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 225; 
+			flex-basis: 540px"
+	>
+	<a href="/p/awaken-sentinel/realtimescope.PNG" data-size="1443x641">
+		<img src="/p/awaken-sentinel/realtimescope.PNG"
+			width="1443"
+			height="641"
+			srcset="/p/awaken-sentinel/realtimescope_hu3b94bea9132d2372a032a9d4e1600600_822460_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/realtimescope_hu3b94bea9132d2372a032a9d4e1600600_822460_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="RealTimeScope">
+	</a>
+	
+	<figcaption>RealTimeScope</figcaption>
+	
+</figure></p>
+<p>Unlike traditional UI overlay scope, this real-time scope must be done by having two separate cameras, one drawing the scope (lower FOV) while the other drawing the regular view. Because there have to be two cameras rendering the scene, the performance cost was a bit extreme.
+I also added some post-processing effects to make the effect look more dramatic.</p>
+<p>Here&rsquo;s a youtube video I made on NANO Engine channel (my old channel) to demonstrate the game better. There has been a lot of updates after the update, though (things like graphics update, launcher update, which I&rsquo;ll discuss later.).
+P
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/RhMxEK78ohA" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+</p>
+<p>(Yes the game was still called project color wars.)</p>
+<p>As you might notice in the video, UI looks very odd and doesn&rsquo;t fit the game. This is something that I started taking more seriously after discontinuing this game.
+I also featured recoil in the showcase video. However, because I never tried making a recoil system before, the recoil system that I used for this game was hard-coded. Meaning it wasn&rsquo;t dynamic and written in a clean code at all. It might&rsquo;ve looked good on the outside, but if I want to make any changes/minor adjustments to the recoil pattern, I would have to re-write the entire code again.</p>
+<p>Here are some more gameplay screenshots:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 222; 
+			flex-basis: 535px"
+	>
+	<a href="/p/awaken-sentinel/gameplay01.PNG" data-size="1436x644">
+		<img src="/p/awaken-sentinel/gameplay01.PNG"
+			width="1436"
+			height="644"
+			srcset="/p/awaken-sentinel/gameplay01_hu9ec7d15707b2577e316a7fcda2316420_921608_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/gameplay01_hu9ec7d15707b2577e316a7fcda2316420_921608_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="Gameplay">
+	</a>
+	
+	<figcaption>Gameplay</figcaption>
+	
+</figure>
+<figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 222; 
+			flex-basis: 533px"
+	>
+	<a href="/p/awaken-sentinel/gameplay02.PNG" data-size="1443x649">
+		<img src="/p/awaken-sentinel/gameplay02.PNG"
+			width="1443"
+			height="649"
+			srcset="/p/awaken-sentinel/gameplay02_hu678b2d672b517f31fddd9cff41b53d16_658432_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/gameplay02_hu678b2d672b517f31fddd9cff41b53d16_658432_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="Gameplay2">
+	</a>
+	
+	<figcaption>Gameplay2</figcaption>
+	
+</figure></p>
+<p>Other than that, I also made a launcher for this game. Game launcher checks for the latest update and updates the game if a newer version is available. It also prevented players to play with the older version. This was required to fix critical exploits that ruin the multiplayer experience.
+Game launcher checks for the latest update by accessing the publicly available text document which stores the latest version data. This text document is stored on a cloud hosting service, in my case, I used one drive. I originally wanted to go with google drive, but google drive didn&rsquo;t work out as I couldn&rsquo;t get the direct link to the file.
+The launcher then compares the fetched version code with the version code of the game. If they&rsquo;re different in any way, it updates the game by fetching the newest version of the game, which is also hosted on a publicly available cloud storage service.
+Although this might sound like an optimal solution, there&rsquo;s a problem. It is technically possible to decompile the game and manually change the version code of the game to match the latest version code. This allows the user to avoid the update.</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 427px"
+	>
+	<a href="/p/awaken-sentinel/launcher.PNG" data-size="1153x648">
+		<img src="/p/awaken-sentinel/launcher.PNG"
+			width="1153"
+			height="648"
+			srcset="/p/awaken-sentinel/launcher_hub7c08db79376ab6ad9ce0d2ac2bd40c7_28061_480x0_resize_box_3.PNG 480w, /p/awaken-sentinel/launcher_hub7c08db79376ab6ad9ce0d2ac2bd40c7_28061_1024x0_resize_box_3.PNG 1024w"
+			loading="lazy"
+			alt="launcher">
+	</a>
+	
+	<figcaption>launcher</figcaption>
+	
+</figure></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/3d/">3D</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/one-room-survival/">
+        
+        
+            <div class="article-image">
+                <img src="/p/one-room-survival/oneroomsurvival.9fc4a4df05012e4ff6017e4621bada7c_hub38c463652888b1ca5a7643a7420d152_410020_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-n8Sk3wUBLk/2AX5GIbrafA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">One Room Survival</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/scattered/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Scattered</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/replay/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Replay</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/protect-the-sandcastle/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Protect The Sandcastle</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/progression/">
+        
+        
+            <div class="article-image">
+                <img src="/p/progression/Gameplay01.7ea374c55582f19fad9de80f48db369e_hu270ef3279ff744257fa739c92ad719f4_53800_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-fqN0xVWC8Z&#43;tnegPSNs2ng==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Progression</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2021 SemiKoder
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arduino on SemiKoder</title>
+    <link>https://semikoder.github.io/categories/arduino/</link>
+    <description>Recent content in Arduino on SemiKoder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/categories/arduino/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Arduino Smartwatch</title>
+      <link>https://semikoder.github.io/p/arduino-smartwatch/</link>
+      <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/arduino-smartwatch/</guid>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;DISCONTINUED&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+For the past 2 weeks, I&amp;rsquo;ve been working on a smartwatch project using my Arduino Pro Mini 3.3v (ATMEGA328P @ 8Mhz). My intention is my smartwatch will connect to my phone and receive all the useful information such as time, notification and messages. Because it uses the time from my mobile phone, it does not need a separate RTC (Real Time Clock), benefitting the size of the smartwatch. I also don&amp;rsquo;t have to replace the battery of RTC.</description>
+    </item>
+    
+  </channel>
+</rss>

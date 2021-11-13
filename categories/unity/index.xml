@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unity on SemiKoder</title>
+    <link>https://semikoder.github.io/categories/unity/</link>
+    <description>Recent content in Unity on SemiKoder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/categories/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scattered</title>
+      <link>https://semikoder.github.io/p/scattered/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/scattered/</guid>
+      <description>For only 5 days, I worked on an entry for &amp;ldquo;Dani&amp;rsquo;s basement Jam&amp;rdquo; (https://itch.io/jam/danis-discord-server-jam). Total 93 entries were made to this game jam and 711 ratings in total. This game jam is hosted by a YouTuber called Dani. As he didn&amp;rsquo;t publicly announce this game jam on his YouTube channel, there weren&amp;rsquo;t a lot of participants. I used Unity game engine to make Scattered. For pixel arts and animations, I used Piskel.</description>
+    </item>
+    
+    <item>
+      <title>Replay</title>
+      <link>https://semikoder.github.io/p/replay/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/replay/</guid>
+      <description>For the past two weeks, I worked on an entry for &amp;ldquo;Brackeys Game Jam 2020.2&amp;rdquo; (https://itch.io/jam/brackeys-4). This is a bigger game jam that&amp;rsquo;s hosted by a YouTuber named &amp;ldquo;Brackeys&amp;rdquo;. I used Unity game engine to make a game in two weeks based on an announced theme, &amp;ldquo;Rewind&amp;rdquo;. The following YouTube video explains how the submission went: </description>
+    </item>
+    
+    <item>
+      <title>Protect The Sandcastle</title>
+      <link>https://semikoder.github.io/p/protect-the-sandcastle/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/protect-the-sandcastle/</guid>
+      <description>For the past two weeks, I worked on an entry for &amp;ldquo;I Can&amp;rsquo;t Draw But Want To Make A Game&amp;rdquo; game jam. This game jam mainly targets people who want to make a game and submit it to the game jam, but don&amp;rsquo;t have good ability to draw. I decided to join this game jam, as I myself isn&amp;rsquo;t a good artist and I just found this game jam to be interesting.</description>
+    </item>
+    
+    <item>
+      <title>Progression</title>
+      <link>https://semikoder.github.io/p/progression/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/progression/</guid>
+      <description>Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&amp;rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement. The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero.</description>
+    </item>
+    
+    <item>
+      <title>One Room Survival</title>
+      <link>https://semikoder.github.io/p/one-room-survival/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/one-room-survival/</guid>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;DISCONTINUED&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+One Room Survival is a game that I started making after I published Sketch Hero. After careful consideration, I decided to make a PC game. Possibly also port it to Android, if the impressions of the game are good. Something that I had to consider while planning the project was marketing. In the beginning, I also had no idea where to exactly publish my game. Steam, a huge game &amp;ldquo;store&amp;rdquo;, which is commonly used by most of the gamers, was not an option for me personally, as I couldn&amp;rsquo;t pay for the fee that&amp;rsquo;s required for me to publish the game on Steam.</description>
+    </item>
+    
+    <item>
+      <title>Project Sketch Hero</title>
+      <link>https://semikoder.github.io/p/project-sketch-hero/</link>
+      <pubDate>Sat, 13 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/project-sketch-hero/</guid>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;DISCONTINUED&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+Sketch Hero is my first Unity Android game project that I published to Google Play store which I worked for around a year.
+Main menu
+I spent a lot of time developing this game and I&amp;rsquo;m really satisfied with how it turned out. I made this game to see how well I know about Unity. Sketch Hero is an endless runner, which means the player plays the game endlessly while trying to achieve the highest score possible.</description>
+    </item>
+    
+    <item>
+      <title>Awaken Sentinel</title>
+      <link>https://semikoder.github.io/p/awaken-sentinel/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/awaken-sentinel/</guid>
+      <description>&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;DISCONTINUED&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;
+Keep in mind I&amp;rsquo;m writing this a year after I stopped making this game. I didn&amp;rsquo;t bother with portfolio or whatsoever back then.
+Awaken Sentinel is the first game that I started making seriously on Unity game engine. It&amp;rsquo;s a multiplier FPS with open-world aspects. I can&amp;rsquo;t provide any further information to the game, nor the story, as the whole project started just because I wanted to learn something and I didn&amp;rsquo;t plan on publishing at all/have the finished product.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='2D Shooter'><title>Progression</title>
+
+<link rel='canonical' href='https://semikoder.github.io/p/progression/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Progression'>
+<meta property='og:description' content='2D Shooter'>
+<meta property='og:url' content='https://semikoder.github.io/p/progression/'>
+<meta property='og:site_name' content='SemiKoder'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='2D' /><meta property='article:published_time' content='2020-02-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-02-17T00:00:00&#43;00:00'/><meta property='og:image' content='https://semikoder.github.io/p/progression/Gameplay01.png' />
+<meta name="twitter:title" content="Progression">
+<meta name="twitter:description" content="2D Shooter"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://semikoder.github.io/p/progression/Gameplay01.png' />
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🐣</span>
+                
+            </figure>
+            
+        
+        
+        <h1 class="site-name"><a href="/">SemiKoder</a></h1>
+        <h2 class="site-description">SemiKoder&#39;s Portfolio</h2><ol class="social-menu">
+                
+                    <li>
+                        <a 
+                            href='https://github.com/SemiKoder'
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+            </ol></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/projects' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/progression/">
+                <img src="/p/progression/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_800x0_resize_box_3.png"
+                        srcset="/p/progression/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_800x0_resize_box_3.png 800w, /p/progression/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="450" 
+                        loading="lazy"
+                        alt="Featured image of post Progression" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/unity/" style="background-color: #2a9d8f; color: #fff;">
+                Unity
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/progression/">Progression</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        2D Shooter
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 17, 2020</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    6 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <p>Progression is an Android game made with Unity that I recently released on Google Play store (that is still downloadable on Google play, link to the download at the bottom). It didn&rsquo;t take me a long time for me to develop this game as the whole system was very easy to implement.
+The main point of this development was to make a simple game in a short duration just so I can get more motivated and get the Unity development wheels rolling again, as I took a break after finishing Sketch Hero.</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/progression/Mainmenu.png" data-size="1920x1080">
+		<img src="/p/progression/Mainmenu.png"
+			width="1920"
+			height="1080"
+			srcset="/p/progression/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_480x0_resize_box_3.png 480w, /p/progression/Mainmenu_hue928cefc2d5c76ca0cd8b75dad8b2a7f_10526_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Main menu">
+	</a>
+	
+	<figcaption>Main menu</figcaption>
+	
+</figure></p>
+<p>Progression is a simple arcade shooter. There are a total of 75 waves (originally 50, but I got requested to make more levels, as they were too &ldquo;easy&rdquo; to complete), and the goal of the game is to defeat all the enemies that spawn in each wave and reach 75 waves. The difficulty of the wave progress as it gets higher and the player needs to destroy them all by progressing them. Kind of like an RPG game, except the options, are limited. The player can upgrade their character by an in-game shop which they can use with in-game money they earn by destroying enemies in the game. Another option for an upgrade is picking up &ldquo;upgrade&rdquo; items within the match. This gives the player a more significant upgrade, but this effect is gone once the player exits the match.
+It is near impossible for a player to complete the game in the first match. The whole concept was to grow their character throughout different matches and upgrade their character using the money they earn.</p>
+<p>I originally designed this game to be extremely difficult to complete. I had a hard time balancing each enemy&rsquo;s ability in the match. I should plan out all the features of the game as well as the enemy&rsquo;s stats before I make them. I didn&rsquo;t genuinely spend a lot of time planning the game before I develop, unlike the other ones, because back then I thought the development process would only take 3 - 4 weeks (I finished all the core mechanics within 2 weeks, but the polishing and fixing bugs took longer).</p>
+<p>I used the object pooling system to spawn different enemies and sort of &ldquo;recycle&rdquo; them when they died. Because the platform I was targeting was Android, optimization was mandatory for this project as well. I couldn&rsquo;t just instantiate (spawn) a new object whenever the enemy spawns or destroy an enemy object completely. The code that gets ran in the background when initialized, destroyed would degrade the performance too much.
+I faced a problem, however. Because I was using an object pooling system, there had to be enough enemies spawned beforehand. This means that, if I want to spawn 30 A enemies in a match, I need to have 30 A enemies in the beginning of the game. This might sound a bit silly and obvious, but here&rsquo;s the problem:
+I didn&rsquo;t want to fill the wave up with the same type of enemy. So I made different types of enemies (I used different shapes so like: square, hexagon, circle, etc.). Now let&rsquo;s say I want to spawn 30 enemies in total, but I want to randomly select enemies between square and circle. Meaning some enemies from total enemies spawned are square while others are circle. Because this is all handled randomly there are a tiny odd that only square enemy can spawn. This means that I would need 30 square enemies in the pool to fill up the match with 30 square enemies (requested). This might not be that big of a problem, but what if I want to add more enemies in a wave and more variety of enemy types? I would need to spawn in so many enemies in so many different types beforehand and at some point, the object pooling system wouldn&rsquo;t just work.
+One solution that I found was to check if the enemy is not available (&ldquo;sold out&rdquo;, there are no enemies left in object pool to spawn) and if not, spawn a different enemy. Unfortunately, I ended up not using this method, because the code was just getting too messy and I just didn&rsquo;t want to touch it any further. I concluded with a dirty way of handling this which was just spawning a bunch of enemies beforehand and <em>HOPING</em> it wouldn&rsquo;t result in such odd that enemy type won&rsquo;t get &ldquo;sold out&rdquo;.</p>
+<p>I didn&rsquo;t bother with the UI that much. UI could&rsquo;ve improved by A LOT in multiple aspects&hellip;</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/progression/Upgrademenu.png" data-size="1920x1080">
+		<img src="/p/progression/Upgrademenu.png"
+			width="1920"
+			height="1080"
+			srcset="/p/progression/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_480x0_resize_box_3.png 480w, /p/progression/Upgrademenu_hu2afcabcce18fa4833e6c20dcae09e124_16289_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Upgrade menu">
+	</a>
+	
+	<figcaption>Upgrade menu</figcaption>
+	
+</figure></p>
+<p>Something that I enjoyed making during the development was boss fights. It was the first time for me to make bosses, so I wasn&rsquo;t sure how I should start. Turned out to be easier and better than I thought/expected. Although, I wouldn&rsquo;t say I&rsquo;m 100% satisfied with the product. There are things that I want to improve/could&rsquo;ve improved on.</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/progression/Bossfight.png" data-size="1920x1080">
+		<img src="/p/progression/Bossfight.png"
+			width="1920"
+			height="1080"
+			srcset="/p/progression/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_480x0_resize_box_3.png 480w, /p/progression/Bossfight_hud349e548bfc2c7ae6a20376953b7800a_56827_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Bossfight">
+	</a>
+	
+	<figcaption>Bossfight</figcaption>
+	
+</figure></p>
+<p>I also added ads (supported by Unity) for this game. I didn&rsquo;t expect to make money from it at all (in fact, I didn&rsquo;t &ldquo;make&rdquo; any. I got around 3 dollars USD by ads, but I couldn&rsquo;t withdraw it since the withdrawal process is only allowed once you earn more than 100 dollars USD. That&rsquo;s how Unity ad system works I guess&hellip;) but I just wanted to try and see how it works. Turned out to be easier than I was expecting.</p>
+<p>I undoubtedly realized how important the whole planning procedure was throughout this project. Not only I could&rsquo;ve avoided a lot of bugs that happened just because I wasn&rsquo;t thinking about it enough (like the enemy spawning issue I addressed earlier in the post), but also saved a lot of time. This project might have finished under a month if I had done proper planning.
+I don&rsquo;t want to touch on this project any further just because I didn&rsquo;t <strong>plan</strong> on working on it once I&rsquo;m done. Not only that, due to the lacking <strong>planning</strong> I did, I just don&rsquo;t want to go over it anymore.</p>
+<p>As I mentioned, it only took around 3 - 4 months in total to create this game from scratch, all the way to polishing. Sure, the game could&rsquo;ve been made in a shorter period, just because of how simple it is, but I was bothered by other more important priorities of my life when I was developing. This might sound like an excuse (which I&rsquo;m not denying) but I could only work on the game for around 5 hours per week.</p>
+<p>But to be honest, overall the game could&rsquo;ve improved in a lot of different ways. I feel like I wasn&rsquo;t giving my best for this project. I&rsquo;m going to spend more time polishing and finishing the game better next time.</p>
+<p>Here are some gameplay screenshots:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/progression/Gameplay01.png" data-size="1920x1080">
+		<img src="/p/progression/Gameplay01.png"
+			width="1920"
+			height="1080"
+			srcset="/p/progression/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_480x0_resize_box_3.png 480w, /p/progression/Gameplay01_hu270ef3279ff744257fa739c92ad719f4_53800_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Gameplay">
+	</a>
+	
+	<figcaption>Gameplay</figcaption>
+	
+</figure>
+<figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/progression/Gameplay02.png" data-size="1920x1080">
+		<img src="/p/progression/Gameplay02.png"
+			width="1920"
+			height="1080"
+			srcset="/p/progression/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_480x0_resize_box_3.png 480w, /p/progression/Gameplay02_hudda10b10ee3ca160a9408cc603188d6d_56474_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Gameplay2">
+	</a>
+	
+	<figcaption>Gameplay2</figcaption>
+	
+</figure>
+<figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/progression/Gameplay03.png" data-size="1920x1080">
+		<img src="/p/progression/Gameplay03.png"
+			width="1920"
+			height="1080"
+			srcset="/p/progression/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_480x0_resize_box_3.png 480w, /p/progression/Gameplay03_huac13948b1fc5919be0a566bd18b000f5_47284_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Gameplay3">
+	</a>
+	
+	<figcaption>Gameplay3</figcaption>
+	
+</figure></p>
+<p>Download Link: <a class="link" href="https://play.google.com/store/apps/details?id=com.FourFootGames.Progression"  target="_blank" rel="noopener"
+    >https://play.google.com/store/apps/details?id=com.FourFootGames.Progression</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/2d/">2D</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/scattered/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Scattered</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/replay/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Replay</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/protect-the-sandcastle/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Protect The Sandcastle</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/project-sketch-hero/">
+        
+        
+            <div class="article-image">
+                <img src="/p/project-sketch-hero/gameplay.c1e19a94a123c0c3c6646734e81618eb_hu8284bd1ddda761c43b534c649f0a9a7f_249100_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-weGalKEjwMPGZGc06BYY6w==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Project Sketch Hero</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/one-room-survival/">
+        
+        
+            <div class="article-image">
+                <img src="/p/one-room-survival/oneroomsurvival.9fc4a4df05012e4ff6017e4621bada7c_hub38c463652888b1ca5a7643a7420d152_410020_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-n8Sk3wUBLk/2AX5GIbrafA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">One Room Survival</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2021 SemiKoder
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

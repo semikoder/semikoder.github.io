@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='3D survival game'><title>One Room Survival</title>
+
+<link rel='canonical' href='https://semikoder.github.io/p/one-room-survival/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='One Room Survival'>
+<meta property='og:description' content='3D survival game'>
+<meta property='og:url' content='https://semikoder.github.io/p/one-room-survival/'>
+<meta property='og:site_name' content='SemiKoder'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='3D' /><meta property='article:published_time' content='2019-09-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-09-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://semikoder.github.io/p/one-room-survival/oneroomsurvival.png' />
+<meta name="twitter:title" content="One Room Survival">
+<meta name="twitter:description" content="3D survival game"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://semikoder.github.io/p/one-room-survival/oneroomsurvival.png' />
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huda2458f72ce188392d75c5d51cd8e24e_373_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🐣</span>
+                
+            </figure>
+            
+        
+        
+        <h1 class="site-name"><a href="/">SemiKoder</a></h1>
+        <h2 class="site-description">SemiKoder&#39;s Portfolio</h2><ol class="social-menu">
+                
+                    <li>
+                        <a 
+                            href='https://github.com/SemiKoder'
+                            target="_blank"
+                            title="GitHub"
+                        >
+                            
+                            
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                            
+                        </a>
+                    </li>
+                
+            </ol></header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/projects' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Projects</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+    </ol>
+</aside>
+
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/one-room-survival/">
+                <img src="/p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_800x0_resize_box_3.png"
+                        srcset="/p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_800x0_resize_box_3.png 800w, /p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="497" 
+                        loading="lazy"
+                        alt="Featured image of post One Room Survival" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/unity/" style="background-color: #2a9d8f; color: #fff;">
+                Unity
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/one-room-survival/">One Room Survival</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        3D survival game
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Sep 18, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<em><strong>DISCONTINUED</strong></em>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
+<p>One Room Survival is a game that I started making after I published Sketch Hero. After careful consideration, I decided to make a PC game. Possibly also port it to Android, if the impressions of the game are good.
+Something that I had to consider while planning the project was marketing. In the beginning, I also had no idea where to exactly publish my game. Steam, a huge game &ldquo;store&rdquo;, which is commonly used by most of the gamers, was not an option for me personally, as I couldn&rsquo;t pay for the fee that&rsquo;s required for me to publish the game on Steam.
+I came across gamejolt and itch.io. They&rsquo;re both game stores that are less popular to gamers, but still very popular. Games on those websites are usually made by indie developers, as developers are allowed to publish their game for free without an additional fee. You can also sell/buy games here as well. I ended up with itch.io, just because it was a bit more user-friendly and a bit more popular among the gaming community.
+<em>Sad part is that this projected ended and the game didn&rsquo;t even see the light.</em></p>
+<p>One Room Survival game is as the title suggests, you must survive in one room with limited resources. Player gets daily food supply with a little bit of water, but you can only get so much that you will soon starve to death. Player must find a way to escape the room and/or survive the longest possible.
+The rough story idea is that the player needs to dig a cave and make an escape path. Digging a cave/going mining reduces player&rsquo;s health and makes him hungry/dehydrated quicker. Player needs to carefully decide when to go mining and how long he should mine.
+That was the whole concept of the game. The project wasn&rsquo;t too big, it was planned with Trello and google docs and it was just generally good and well set up.</p>
+<p><em>I don&rsquo;t have a lot of screenshots to show: 1. it&rsquo;s one room survival game, you only interact in one room. 2. I stopped working on the game before making bigger progress.</em></p>
+<p>Two things that I particularly wanted to focus on during the development were lighting/environment settings and UI.
+In my last couple 3D projects, such as Awaken Sentinel (3D multiplayer FPS game), I didn&rsquo;t focus on the scene lighting and the mood of it rather focused on the post-processing effects and how the camera renders the scene.
+There&rsquo;s a difference between how the camera renders (post-processing) the scene and how the scene looks like (lighting/environment setup). I consider how the scene looks far more important than how the camera renders now. Of course, adding post-processing effects does help the mood you want to go for, but I feel like it&rsquo;s a bit more natural if you&rsquo;re adjusting the whole scene lighting.</p>
+<p>I baked the lighting using the &ldquo;Progressive GPU&rdquo; option in Unity. I did not use real-time lighting at all. I thought real-time lighting would unnecessarily take performance when all the scene objects are stationary (you can only bake lighting if the models are not going to move during the game. real-time lighting is usually used for things like characters, so objects that move during the game). Baking lighting simply means making an image, that can be projected on the objects in the scene to simulate that there are things like shadows in the scene.
+I used fake shadows for the character. It is possible to mix baked and real-time lighting, but I liked the look of the fake shadows (just a &ldquo;circle&rdquo; on where the character is standing) more for this game. However, I did use real-time shadows for the objects that can be picked up by the player. This was the only solution, as baked shadows are always there, projected on the room, even the object is not visible to the camera.
+For the lights, I applied emissive material on the cylinder (light bulb). No directional/environmental lights were used.
+I would like to specifically point out that I baked ambient occlusion, as on my other projects, I&rsquo;ve been using screen space ambient occlusion instead. Screen space ambient occlusion (SSAO) is a post-processing effect, which is used on the rendering camera to &ldquo;simulate&rdquo; the ambient occlusion of the environment. This is less realistic and very performance heavy as it needs to calculate where the proper shadow needs to be.
+<em>In case you don&rsquo;t know what ambient occlusion is, it&rsquo;s a shadow/darker part that&rsquo;s between two objects when they collide together</em></p>
+<p>Here&rsquo;s how it turned out:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 160; 
+			flex-basis: 386px"
+	>
+	<a href="/p/one-room-survival/oneroomsurvival.png" data-size="906x563">
+		<img src="/p/one-room-survival/oneroomsurvival.png"
+			width="906"
+			height="563"
+			srcset="/p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_480x0_resize_box_3.png 480w, /p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_1024x0_resize_box_3.png 1024w"
+			loading="lazy"
+			alt="Gameplay">
+	</a>
+	
+	<figcaption>Gameplay</figcaption>
+	
+</figure></p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 93; 
+			flex-basis: 223px"
+	>
+	<a href="/p/one-room-survival/sceneview.jpg" data-size="561x603">
+		<img src="/p/one-room-survival/sceneview.jpg"
+			width="561"
+			height="603"
+			srcset="/p/one-room-survival/sceneview_hued95a35c6a61b2ebd70fbf1280beb365_28854_480x0_resize_q75_box.jpg 480w, /p/one-room-survival/sceneview_hued95a35c6a61b2ebd70fbf1280beb365_28854_1024x0_resize_q75_box.jpg 1024w"
+			loading="lazy"
+			alt="Sceneview">
+	</a>
+	
+	<figcaption>Sceneview</figcaption>
+	
+</figure></p>
+<p><em>Character model is missing. This is due to incompatibility. Unity updated itself so much that some file extensions are not readable/compatible. I&rsquo;m writing this from the future.</em></p>
+<p>As I mentioned, I also focused on UI this game. I didn&rsquo;t spend a lot of time tinkering the whole Unity UI system or properly design UI on my other games, so I wanted to try something new for this project. It obviously didn&rsquo;t turn out to be the best and I know I can improve a lot, but here&rsquo;s how it is:</p>
+<p><figure 
+	
+		class="gallery-image" 
+		style="
+			flex-grow: 177; 
+			flex-basis: 426px"
+	>
+	<a href="/p/one-room-survival/gameplay0.jpg" data-size="951x535">
+		<img src="/p/one-room-survival/gameplay0.jpg"
+			width="951"
+			height="535"
+			srcset="/p/one-room-survival/gameplay0_huaf42fb816f696c3978372f479d0f3876_40973_480x0_resize_q75_box.jpg 480w, /p/one-room-survival/gameplay0_huaf42fb816f696c3978372f479d0f3876_40973_1024x0_resize_q75_box.jpg 1024w"
+			loading="lazy"
+			alt="Gameplay2">
+	</a>
+	
+	<figcaption>Gameplay2</figcaption>
+	
+</figure></p>
+<p>Something that I&rsquo;m proud of is the pickup system. Player can interact with the object in the room and pick them up if they want to. Player is also able to use them if they are usable.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/3d/">3D</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/awaken-sentinel/">
+        
+        
+            <div class="article-image">
+                <img src="/p/awaken-sentinel/graphicsupdate.522323f081d71a3dd84a73d7f2f662d8_hu64b50e11776c16104a4e03122afb619f_1350265_250x150_fill_box_smart1_3.PNG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-UiMj8IHXGj3YSnPX8vZi2A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Awaken Sentinel</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/scattered/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Scattered</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/replay/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Replay</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/protect-the-sandcastle/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Protect The Sandcastle</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/progression/">
+        
+        
+            <div class="article-image">
+                <img src="/p/progression/Gameplay01.7ea374c55582f19fad9de80f48db369e_hu270ef3279ff744257fa739c92ad719f4_53800_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-fqN0xVWC8Z&#43;tnegPSNs2ng==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Progression</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2021 SemiKoder
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

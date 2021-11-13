@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on SemiKoder</title>
+    <link>https://semikoder.github.io/page/</link>
+    <description>Recent content in Pages on SemiKoder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://semikoder.github.io/about/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/about/</guid>
+      <description>Hi, I&amp;rsquo;m SemiKoder. I&amp;rsquo;m a programmer. Programming languages I know are: C#, C++, Java and a bit of Python and Rust. I mainly develop games using a game engine called Unity and do micro controller projects using Arduino as well as projects with Raspberry Pi.
+I use C# with Unity to develop PC and Mobile (Android) games. I&amp;rsquo;ve released games I made for mobile on Google Play and uploaded PC games on itch.</description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://semikoder.github.io/projects/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://semikoder.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
