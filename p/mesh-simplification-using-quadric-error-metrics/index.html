@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='3D survival game'><title>One Room Survival</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Implementation of mesh simplification algorithm using quad error metrics in Unity game engine'><title>Mesh Simplification using Quadric Error Metrics</title>
 
-<link rel='canonical' href='https://semikoder.github.io/p/one-room-survival/'>
+<link rel='canonical' href='https://semikoder.github.io/p/mesh-simplification-using-quadric-error-metrics/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='One Room Survival'>
-<meta property='og:description' content='3D survival game'>
-<meta property='og:url' content='https://semikoder.github.io/p/one-room-survival/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Mesh Simplification using Quadric Error Metrics'>
+<meta property='og:description' content='Implementation of mesh simplification algorithm using quad error metrics in Unity game engine'>
+<meta property='og:url' content='https://semikoder.github.io/p/mesh-simplification-using-quadric-error-metrics/'>
 <meta property='og:site_name' content='SemiKoder'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='3D' /><meta property='article:published_time' content='2019-09-18T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-09-18T00:00:00&#43;00:00'/><meta property='og:image' content='https://semikoder.github.io/p/one-room-survival/oneroomsurvival.png' />
-<meta name="twitter:title" content="One Room Survival">
-<meta name="twitter:description" content="3D survival game"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://semikoder.github.io/p/one-room-survival/oneroomsurvival.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='3D' /><meta property='article:published_time' content='2021-10-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-11T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Mesh Simplification using Quadric Error Metrics">
+<meta name="twitter:description" content="Implementation of mesh simplification algorithm using quad error metrics in Unity game engine">
     </head>
     <body class="
     article-page 
@@ -187,20 +186,8 @@
 
     
 <main class="main full-width">
-    <article class="has-image main-article">
+    <article class="main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/p/one-room-survival/">
-                <img src="/p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_800x0_resize_box_3.png"
-                        srcset="/p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_800x0_resize_box_3.png 800w, /p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_1600x0_resize_box_3.png 1600w"
-                        width="800" 
-                        height="497" 
-                        loading="lazy"
-                        alt="Featured image of post One Room Survival" />
-                
-            </a>
-        </div>
-    
 
     <div class="article-details">
     
@@ -214,12 +201,12 @@
     
 
     <h2 class="article-title">
-        <a href="/p/one-room-survival/">One Room Survival</a>
+        <a href="/p/mesh-simplification-using-quadric-error-metrics/">Mesh Simplification using Quadric Error Metrics</a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        3D survival game
+        Implementation of mesh simplification algorithm using quad error metrics in Unity game engine
     </h3>
     
 
@@ -236,7 +223,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Sep 18, 2019</time>
+                <time class="article-time--published">Oct 11, 2021</time>
             </div>
         
 
@@ -251,7 +238,7 @@
 
 
                 <time class="article-time--reading">
-                    5 minute read
+                    1 minute read
                 </time>
             </div>
         
@@ -261,84 +248,7 @@
 </header>
 
     <section class="article-content">
-    <p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<em><strong>DISCONTINUED</strong></em>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</p>
-<p>One Room Survival is a game that I started making after I published Sketch Hero. After careful consideration, I decided to make a PC game. Possibly also port it to Android, if the impressions of the game are good.
-Something that I had to consider while planning the project was marketing. In the beginning, I also had no idea where to exactly publish my game. Steam, a huge game &ldquo;store&rdquo;, which is commonly used by most of the gamers, was not an option for me personally, as I couldn&rsquo;t pay for the fee that&rsquo;s required for me to publish the game on Steam.
-I came across gamejolt and itch.io. They&rsquo;re both game stores that are less popular to gamers, but still very popular. Games on those websites are usually made by indie developers, as developers are allowed to publish their game for free without an additional fee. You can also sell/buy games here as well. I ended up with itch.io, just because it was a bit more user-friendly and a bit more popular among the gaming community.
-<em>Sad part is that this projected ended and the game didn&rsquo;t even see the light.</em></p>
-<p>One Room Survival game is as the title suggests, you must survive in one room with limited resources. Player gets daily food supply with a little bit of water, but you can only get so much that you will soon starve to death. Player must find a way to escape the room and/or survive the longest possible.
-The rough story idea is that the player needs to dig a cave and make an escape path. Digging a cave/going mining reduces player&rsquo;s health and makes him hungry/dehydrated quicker. Player needs to carefully decide when to go mining and how long he should mine.
-That was the whole concept of the game. The project wasn&rsquo;t too big, it was planned with Trello and google docs and it was just generally good and well set up.</p>
-<p><em>I don&rsquo;t have a lot of screenshots to show: 1. it&rsquo;s one room survival game, you only interact in one room. 2. I stopped working on the game before making bigger progress.</em></p>
-<p>Two things that I particularly wanted to focus on during the development were lighting/environment settings and UI.
-In my last couple 3D projects, such as Awaken Sentinel (3D multiplayer FPS game), I didn&rsquo;t focus on the scene lighting and the mood of it rather focused on the post-processing effects and how the camera renders the scene.
-There&rsquo;s a difference between how the camera renders (post-processing) the scene and how the scene looks like (lighting/environment setup). I consider how the scene looks far more important than how the camera renders now. Of course, adding post-processing effects does help the mood you want to go for, but I feel like it&rsquo;s a bit more natural if you&rsquo;re adjusting the whole scene lighting.</p>
-<p>I baked the lighting using the &ldquo;Progressive GPU&rdquo; option in Unity. I did not use real-time lighting at all. I thought real-time lighting would unnecessarily take performance when all the scene objects are stationary (you can only bake lighting if the models are not going to move during the game. real-time lighting is usually used for things like characters, so objects that move during the game). Baking lighting simply means making an image, that can be projected on the objects in the scene to simulate that there are things like shadows in the scene.
-I used fake shadows for the character. It is possible to mix baked and real-time lighting, but I liked the look of the fake shadows (just a &ldquo;circle&rdquo; on where the character is standing) more for this game. However, I did use real-time shadows for the objects that can be picked up by the player. This was the only solution, as baked shadows are always there, projected on the room, even the object is not visible to the camera.
-For the lights, I applied emissive material on the cylinder (light bulb). No directional/environmental lights were used.
-I would like to specifically point out that I baked ambient occlusion, as on my other projects, I&rsquo;ve been using screen space ambient occlusion instead. Screen space ambient occlusion (SSAO) is a post-processing effect, which is used on the rendering camera to &ldquo;simulate&rdquo; the ambient occlusion of the environment. This is less realistic and very performance heavy as it needs to calculate where the proper shadow needs to be.
-<em>In case you don&rsquo;t know what ambient occlusion is, it&rsquo;s a shadow/darker part that&rsquo;s between two objects when they collide together</em></p>
-<p>Here&rsquo;s how it turned out:</p>
-<p><figure 
-	
-		class="gallery-image" 
-		style="
-			flex-grow: 160; 
-			flex-basis: 386px"
-	>
-	<a href="/p/one-room-survival/oneroomsurvival.png" data-size="906x563">
-		<img src="/p/one-room-survival/oneroomsurvival.png"
-			width="906"
-			height="563"
-			srcset="/p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_480x0_resize_box_3.png 480w, /p/one-room-survival/oneroomsurvival_hub38c463652888b1ca5a7643a7420d152_410020_1024x0_resize_box_3.png 1024w"
-			loading="lazy"
-			alt="Gameplay">
-	</a>
-	
-	<figcaption>Gameplay</figcaption>
-	
-</figure></p>
-<p><figure 
-	
-		class="gallery-image" 
-		style="
-			flex-grow: 93; 
-			flex-basis: 223px"
-	>
-	<a href="/p/one-room-survival/sceneview.jpg" data-size="561x603">
-		<img src="/p/one-room-survival/sceneview.jpg"
-			width="561"
-			height="603"
-			srcset="/p/one-room-survival/sceneview_hued95a35c6a61b2ebd70fbf1280beb365_28854_480x0_resize_q75_box.jpg 480w, /p/one-room-survival/sceneview_hued95a35c6a61b2ebd70fbf1280beb365_28854_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="Sceneview">
-	</a>
-	
-	<figcaption>Sceneview</figcaption>
-	
-</figure></p>
-<p><em>Character model is missing. This is due to incompatibility. Unity updated itself so much that some file extensions are not readable/compatible. I&rsquo;m writing this from the future.</em></p>
-<p>As I mentioned, I also focused on UI this game. I didn&rsquo;t spend a lot of time tinkering the whole Unity UI system or properly design UI on my other games, so I wanted to try something new for this project. It obviously didn&rsquo;t turn out to be the best and I know I can improve a lot, but here&rsquo;s how it is:</p>
-<p><figure 
-	
-		class="gallery-image" 
-		style="
-			flex-grow: 177; 
-			flex-basis: 426px"
-	>
-	<a href="/p/one-room-survival/gameplay0.jpg" data-size="951x535">
-		<img src="/p/one-room-survival/gameplay0.jpg"
-			width="951"
-			height="535"
-			srcset="/p/one-room-survival/gameplay0_huaf42fb816f696c3978372f479d0f3876_40973_480x0_resize_q75_box.jpg 480w, /p/one-room-survival/gameplay0_huaf42fb816f696c3978372f479d0f3876_40973_1024x0_resize_q75_box.jpg 1024w"
-			loading="lazy"
-			alt="Gameplay2">
-	</a>
-	
-	<figcaption>Gameplay2</figcaption>
-	
-</figure></p>
-<p>Something that I&rsquo;m proud of is the pickup system. Player can interact with the object in the room and pick them up if they want to. Player is also able to use them if they are usable.</p>
+    <p>WIP</p>
 
 </section>
 
@@ -400,13 +310,23 @@ I would like to specifically point out that I baked ambient occlusion, as on my 
 </article>
                 
                     
-<article class="">
-    <a href="/p/mesh-simplification-using-quadric-error-metrics/">
+<article class="has-image">
+    <a href="/p/one-room-survival/">
         
+        
+            <div class="article-image">
+                <img src="/p/one-room-survival/oneroomsurvival.9fc4a4df05012e4ff6017e4621bada7c_hub38c463652888b1ca5a7643a7420d152_410020_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-n8Sk3wUBLk/2AX5GIbrafA==">
+                
+            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Mesh Simplification using Quadric Error Metrics</h2>
+            <h2 class="article-title">One Room Survival</h2>
         </div>
     </a>
 </article>

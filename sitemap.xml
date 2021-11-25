@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://semikoder.github.io/tags/3d/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/categories/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/p/polygonal-terrain-generation/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/post/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/tags/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/categories/unity/</loc>
+    <lastmod>2021-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://semikoder.github.io/p/mesh-simplification-using-quadric-error-metrics/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://semikoder.github.io/tags/2d/</loc>
     <lastmod>2020-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://semikoder.github.io/categories/</loc>
-    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://semikoder.github.io/post/</loc>
-    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://semikoder.github.io/p/scattered/</loc>
-    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://semikoder.github.io/</loc>
-    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://semikoder.github.io/tags/</loc>
-    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://semikoder.github.io/categories/unity/</loc>
     <lastmod>2020-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://semikoder.github.io/p/replay/</loc>
@@ -40,9 +49,6 @@
   </url><url>
     <loc>https://semikoder.github.io/projects/</loc>
     <lastmod>2020-02-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://semikoder.github.io/tags/3d/</loc>
-    <lastmod>2019-09-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://semikoder.github.io/p/one-room-survival/</loc>
     <lastmod>2019-09-18T00:00:00+00:00</lastmod>
