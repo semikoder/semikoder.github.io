@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on SemiKoder</title>
+    <title>Posts on semikoder</title>
     <link>https://semikoder.github.io/post/</link>
-    <description>Recent content in Posts on SemiKoder</description>
+    <description>Recent content in Posts on semikoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/post/index.xml" rel="self" type="application/rss+xml" />
@@ -23,7 +23,8 @@ Couple days ago, I came across this interesting article called &amp;ldquo;Polygo
       <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://semikoder.github.io/p/mesh-simplification-using-quadric-error-metrics/</guid>
-      <description>WIP</description>
+      <description>This time, I&amp;rsquo;ve done a quick and short research on mesh simplification algorithm (and homogeneous coordiantes, quadrics) using quadric error metrics (and planning on implementing this algorithm with Unity Engine). Be aware that not all of this information may be correct.
+Homogeneous coordinates (projective coordinates)  railroad; source: https://www.songho.ca/math/homogeneous/homogeneous.html  In contrast to Euclidean geometry (three-dimensional space), projective geometry introduces another Z dimension, called W, in which it is used to describe the distance from the projector to the screen.</description>
     </item>
     
     <item>
