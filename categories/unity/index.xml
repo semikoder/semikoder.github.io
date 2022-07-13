@@ -6,7 +6,17 @@
     <description>Recent content in Unity on semikoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/categories/unity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/categories/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Project BioBot</title>
+      <link>https://semikoder.github.io/p/project-biobot/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://semikoder.github.io/p/project-biobot/</guid>
+      <description>Introduction A month ago, I joined a game jam that lasted for 8 days (https://itch.io/jam/goedware-game-jam-5). However, I participated with some of my friends rather than alone. We ended up in a team of 4, all enthusiastic about the game jam.
+Brainstorming The theme of the game jam was &amp;ldquo;Love, Death &amp;amp; Robots&amp;rdquo; with a subtheme of &amp;ldquo;the price of freedom&amp;rdquo;. From the start, we all wanted to include both of the theme aspects to the game.</description>
+    </item>
+    
     <item>
       <title>Polygonal Terrain Generation</title>
       <link>https://semikoder.github.io/p/polygonal-terrain-generation/</link>

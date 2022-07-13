@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='3D First Person Puzzle Game'><title>Project BioBot</title>
+
+<link rel='canonical' href='https://semikoder.github.io/p/project-biobot/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Project BioBot'>
+<meta property='og:description' content='3D First Person Puzzle Game'>
+<meta property='og:url' content='https://semikoder.github.io/p/project-biobot/'>
+<meta property='og:site_name' content='semikoder'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='3D' /><meta property='article:published_time' content='2022-07-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-07-13T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Project BioBot">
+<meta name="twitter:description" content="3D First Person Puzzle Game">
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            localStorage.setItem(colorSchemeKey, "auto");
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>Back</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/unity/" style="background-color: #2a9d8f; color: #fff;">
+                Unity
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/project-biobot/">Project BioBot</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        3D First Person Puzzle Game
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 13, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    8 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h1 id="introduction">Introduction</h1>
+<p>A month ago, I joined a game jam that lasted for 8 days (<a class="link" href="https://itch.io/jam/goedware-game-jam-5%29"  target="_blank" rel="noopener"
+    >https://itch.io/jam/goedware-game-jam-5)</a>. However, I participated with some of my friends rather than alone. We ended up in a team of 4, all enthusiastic about the game jam.</p>
+<h1 id="brainstorming">Brainstorming</h1>
+<p>The theme of the game jam was &ldquo;Love, Death &amp; Robots&rdquo; with a subtheme of &ldquo;the price of freedom&rdquo;. From the start, we all wanted to include both of the theme aspects to the game. Yet, it was quite hard for us to come up with an idea that&rsquo;s unique, creative and has fun gameplay. One idea that we immediately came across is humans turning into robots after death. This would allow the player to extend their love towards their partner after death. While this idea may sound good in appearence, we felt like it was too common. This idea has been exposed to the general public multiple times via films, books, games, etc.</p>
+<p>After about an hour of brainstorming with my friends, we came up with slightly more interesting idea. The following is a setting of the game (I will not go over too much about the story of the game.)</p>
+<blockquote>
+<p>A company called Biobotic Technologies have been working on a project called &ldquo;BioBot&rdquo;, where they are essentially able to turn humans into robots. Biobotic Technologies thought robot workers is far more efficient than having human workers, as robots don&rsquo;t get tired unlike humans. They also figured by limiting robot&rsquo;s emotions, they&rsquo;ll be able to turn humans into more neutral, conscientious workers. It can be seen as a win-win situation, because the stress that humans receive can also be reduced significantly, if their emotions are controlled.</p>
+</blockquote>
+<p>Once we had a setting, we had to come up with an immersive background story. Now, originally I came up with an idea where the player participates in this program and turns himself into a worker and then goes into a (laptop) factory to work. Although, I quickly had to scrap this idea. Mostly because, it was a bit absurd that such a powerful company, Biobotic Technologies would create a revolutionary technology just to make laptops more efficiently. Instead, we decided to make a testing facility. Biobotics Technologies would like to perform human trials and needs voluntary human. Protagonist (fairly poor), participates in this program, as they have promised a large amount of money in return. The whole gameplay is about player in this testing facility.</p>
+<p>Even before when the game jam has started, our team agreed on making a puzzle game. We always wanted to make a puzzle game some time, this game jam was just a perfect opportunity for us to do so. Because the game was about being tested in a testing facility, we could just add puzzle mechanics in the testing rooms.</p>
+<p>We definitely went very ambitious with the project. We planned to add different cutscenes with dialogues (+ voicelines) and a full background story for a small, 8-days long game jam. While we had doubts over our next 8 days of game development, we couldn&rsquo;t stop ourselves.</p>
+<h1 id="thought-processes">Thought processes</h1>
+<h2 id="map">Map</h2>
+<p>Another reason why we went with the testing facility idea is because the whole gameplay takes place indoors. Indoor environments are generally easier to design and create. This is because there aren&rsquo;t as many things to take account for compared to making an outdoor environment. For instance, in order to create a good outdoor environment, one should focus on different viewing angles and/or overall mood that an environment can deliver. This is to allow a more interesting and interactive map that isn&rsquo;t monotone. In contrast, these factors don&rsquo;t necessarily need to be considered greatly in indoor environments. Player already feel &ldquo;limited&rdquo; by the walls surrounding them in a room. Therefore, aspects such as creating a beautiful viewing angle or delivering different emotions depending on player&rsquo;s position/perspective can be discarded. Additionally, creating an outdoor environment tend to be more time consuming, which isn&rsquo;t entirely easy for a small team like us and when we are restricted by the time.</p>
+<h2 id="gameplay">Gameplay</h2>
+<h3 id="story">Story</h3>
+<p>We were aware that it is difficult to visually present a story to a player (especially for us, as we don&rsquo;t have much experience in visual story telling). At the same time, we certainly didn&rsquo;t want to just put white texts on a black screen and let players read it. Often during the game jams, people don&rsquo;t tend to read them.</p>
+<p>By visually expressing the story, we had to consider different factors that could influence how the players think and join in. Methods of visual representations include, but not limited to: color, shape, complexity, etc. Not only that, visual representation isn&rsquo;t the only way to tell the story. As we had voicelines prepared for our story telling, we also had to carefully watch out for our tone, the language we use and the pace to better explain the story. In addition, sequence also matters a lot in bringing an amusing story, i.e. having a exposition, rising action, climax, falling action and so on&hellip;</p>
+<p>All of these factors had to be carefully constructed together to create harmony. Obviously, with our inexperience with story telling and time constraints, we didn&rsquo;t have enough time to think of them all.</p>
+<h3 id="puzzle-mechanics">Puzzle Mechanics</h3>
+<p>Making a puzzle game requires a lot of thinking, as we had to come up with a creative solution every puzzle level. With that being said, we also didn&rsquo;t want to make the puzzles too difficult. Games in game jams should be simple to play and have fun. We wanted everyone to play the game through and see the ending (that we spent so much time to create).</p>
+<p>Something that I think we could&rsquo;ve done in addition is to incorporate story aspects throughout the puzzle levels. Looking back at the game now, it seems like the puzzle gameplay is completely separated from the story. Perhaps at the very least, the levels could&rsquo;ve been designed in a way that it helps with the flow of the story.</p>
+<h3 id="parkour-mechanics">Parkour Mechanics</h3>
+<p>There are simple parkour mechanics in the game. Vaulting and climbing (and sliding, but due to the time constraints and the bugs regarding sliding, we had to remove this feature completely.). We originally wanted to incorporate more parkour mechanics with the puzzle mechanics. We figured this would make the game feel more than just a boring puzzle game, but designing a map that creatively utilizes these mechanics was too difficult. So we ended up pushing those parkour mechanics to the ending instead (when the player has to &ldquo;escape&rdquo; from the facility). Designing a separate area for only one specific aspect is easier than making an environment that allows more than one aspects (but again, this most likely makes the map less interactive to play).</p>
+<h2 id="cutscenes">Cutscenes</h2>
+<p>As briefly mentioned earlier, we did plan have dialogues with voicelines and cutscenes in the game. However, we had to cut corners. Planning / directing convincing cutscenes that allow smooth transition between gameplay and story telling requires a lot of effort. We couldn&rsquo;t spend too much time doing this, as we had other things to work on. Additionally, we also didn&rsquo;t have a lot of experience creating these cutscenes, so it was hard for us to deliver the story to the players. Looking back at the cutscenes right now, I can understand that it might be a bit difficult for people to understand what&rsquo;s going on. Overall the pace is a bit too fast, and the details (mostly the bracelet part) aren&rsquo;t highlighted enough as much as we wanted to. Maybe we could&rsquo;ve done a better job with the camera angle to put the bracelet in the focus. To be fair, we had to position the camera in a way that our character&rsquo;s heads don&rsquo;t show up, because we didn&rsquo;t want to animate the facial expressions (they can be difficult and complex to make pleasing and realistic). The cutscene that happens towards the end of the game (right before when the player has to make the final decision) is probably the best cutscene among the others. It looks visually good and tells a lot about the story. Perhaps one improvement that we could&rsquo;ve done is to make the dialogue between the character and &ldquo;another robot&rdquo; a little more concise or more interactive. The mood ended up being less interesting as the dialogue went on. Maybe we could&rsquo;ve added some hand gestures while the player is talking to the robot or some camera animations (e.g. slight tilt). At the same time, this also meant we need to spend more time on working on the animations and to be fair, we were already running out of time enough.</p>
+<h1 id="end-result">End Result</h1>
+<p>I would be lying if I say everything went flawlessly with the game jam. We faced game-breaking bugs very last minute of the game jam we had to fix. Our scene loader and unloader were messed up due to a small coding problem, but we quickly found the issue and resolved it. The bug that occurred during the finished build.
+Apart from that bug, I&rsquo;d say the game we made was successful. There weren&rsquo;t noticeable bugs in the game. For the most part, the gameplay went as we planned.</p>
+<p>I also created a walkthrough video, in case anyone gets stuck while playing the game:
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/laCbtVfbVhw" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+</p>
+<p>Here&rsquo;s a YouTube video explaining how the game is created and my thought processes behind it:
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/lzPHjSEOwVU" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+</p>
+<p>And finally, here&rsquo;s the link to my game jam submission page (including the download link of the game): <a class="link" href="https://semikoder.itch.io/project-biobot"  target="_blank" rel="noopener"
+    >https://semikoder.itch.io/project-biobot</a></p>
+<h1 id="afterword">Afterword</h1>
+<p>Overall, participating in this game jam was a huge challenge for me. As pointed out above, things like voice acting or making cutscenes are things I&rsquo;ve never done before. I&rsquo;ve joined other game jams in the past, but I&rsquo;ve never learned things as much as I did throughout this game jam. It was a great learning experience for me.</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/3d/">3D</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">Related contents</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/polygonal-terrain-generation/">
+        
+        
+            <div class="article-image">
+                <img src="/p/polygonal-terrain-generation/_hucee10becb4d1cd630c80bc244da2cc2e_236258_8e8b1272420701866bedddba52a8e59b.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-3SJBe&#43;o3eJDQ5pUeHMj1IA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Polygonal Terrain Generation</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/mesh-simplification-using-quadric-error-metrics/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Mesh Simplification using Quadric Error Metrics</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/one-room-survival/">
+        
+        
+            <div class="article-image">
+                <img src="/p/one-room-survival/oneroomsurvival.9fc4a4df05012e4ff6017e4621bada7c_hub38c463652888b1ca5a7643a7420d152_410020_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-n8Sk3wUBLk/2AX5GIbrafA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">One Room Survival</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/awaken-sentinel/">
+        
+        
+            <div class="article-image">
+                <img src="/p/awaken-sentinel/graphicsupdate.522323f081d71a3dd84a73d7f2f662d8_hu64b50e11776c16104a4e03122afb619f_1350265_250x150_fill_box_smart1_3.PNG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-UiMj8IHXGj3YSnPX8vZi2A==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Awaken Sentinel</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/scattered/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Scattered</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2017 - 
+        
+        2022 semikoder
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">Table of contents</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#map">Map</a></li>
+    <li><a href="#gameplay">Gameplay</a>
+      <ol>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#puzzle-mechanics">Puzzle Mechanics</a></li>
+        <li><a href="#parkour-mechanics">Parkour Mechanics</a></li>
+      </ol>
+    </li>
+    <li><a href="#cutscenes">Cutscenes</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

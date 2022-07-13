@@ -6,7 +6,69 @@
         <description>Recent content on semikoder</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 19 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 13 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://semikoder.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Project BioBot</title>
+        <link>https://semikoder.github.io/p/project-biobot/</link>
+        <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://semikoder.github.io/p/project-biobot/</guid>
+        <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;A month ago, I joined a game jam that lasted for 8 days (&lt;a class=&#34;link&#34; href=&#34;https://itch.io/jam/goedware-game-jam-5%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://itch.io/jam/goedware-game-jam-5)&lt;/a&gt;. However, I participated with some of my friends rather than alone. We ended up in a team of 4, all enthusiastic about the game jam.&lt;/p&gt;
+&lt;h1 id=&#34;brainstorming&#34;&gt;Brainstorming&lt;/h1&gt;
+&lt;p&gt;The theme of the game jam was &amp;ldquo;Love, Death &amp;amp; Robots&amp;rdquo; with a subtheme of &amp;ldquo;the price of freedom&amp;rdquo;. From the start, we all wanted to include both of the theme aspects to the game. Yet, it was quite hard for us to come up with an idea that&amp;rsquo;s unique, creative and has fun gameplay. One idea that we immediately came across is humans turning into robots after death. This would allow the player to extend their love towards their partner after death. While this idea may sound good in appearence, we felt like it was too common. This idea has been exposed to the general public multiple times via films, books, games, etc.&lt;/p&gt;
+&lt;p&gt;After about an hour of brainstorming with my friends, we came up with slightly more interesting idea. The following is a setting of the game (I will not go over too much about the story of the game.)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A company called Biobotic Technologies have been working on a project called &amp;ldquo;BioBot&amp;rdquo;, where they are essentially able to turn humans into robots. Biobotic Technologies thought robot workers is far more efficient than having human workers, as robots don&amp;rsquo;t get tired unlike humans. They also figured by limiting robot&amp;rsquo;s emotions, they&amp;rsquo;ll be able to turn humans into more neutral, conscientious workers. It can be seen as a win-win situation, because the stress that humans receive can also be reduced significantly, if their emotions are controlled.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once we had a setting, we had to come up with an immersive background story. Now, originally I came up with an idea where the player participates in this program and turns himself into a worker and then goes into a (laptop) factory to work. Although, I quickly had to scrap this idea. Mostly because, it was a bit absurd that such a powerful company, Biobotic Technologies would create a revolutionary technology just to make laptops more efficiently. Instead, we decided to make a testing facility. Biobotics Technologies would like to perform human trials and needs voluntary human. Protagonist (fairly poor), participates in this program, as they have promised a large amount of money in return. The whole gameplay is about player in this testing facility.&lt;/p&gt;
+&lt;p&gt;Even before when the game jam has started, our team agreed on making a puzzle game. We always wanted to make a puzzle game some time, this game jam was just a perfect opportunity for us to do so. Because the game was about being tested in a testing facility, we could just add puzzle mechanics in the testing rooms.&lt;/p&gt;
+&lt;p&gt;We definitely went very ambitious with the project. We planned to add different cutscenes with dialogues (+ voicelines) and a full background story for a small, 8-days long game jam. While we had doubts over our next 8 days of game development, we couldn&amp;rsquo;t stop ourselves.&lt;/p&gt;
+&lt;h1 id=&#34;thought-processes&#34;&gt;Thought processes&lt;/h1&gt;
+&lt;h2 id=&#34;map&#34;&gt;Map&lt;/h2&gt;
+&lt;p&gt;Another reason why we went with the testing facility idea is because the whole gameplay takes place indoors. Indoor environments are generally easier to design and create. This is because there aren&amp;rsquo;t as many things to take account for compared to making an outdoor environment. For instance, in order to create a good outdoor environment, one should focus on different viewing angles and/or overall mood that an environment can deliver. This is to allow a more interesting and interactive map that isn&amp;rsquo;t monotone. In contrast, these factors don&amp;rsquo;t necessarily need to be considered greatly in indoor environments. Player already feel &amp;ldquo;limited&amp;rdquo; by the walls surrounding them in a room. Therefore, aspects such as creating a beautiful viewing angle or delivering different emotions depending on player&amp;rsquo;s position/perspective can be discarded. Additionally, creating an outdoor environment tend to be more time consuming, which isn&amp;rsquo;t entirely easy for a small team like us and when we are restricted by the time.&lt;/p&gt;
+&lt;h2 id=&#34;gameplay&#34;&gt;Gameplay&lt;/h2&gt;
+&lt;h3 id=&#34;story&#34;&gt;Story&lt;/h3&gt;
+&lt;p&gt;We were aware that it is difficult to visually present a story to a player (especially for us, as we don&amp;rsquo;t have much experience in visual story telling). At the same time, we certainly didn&amp;rsquo;t want to just put white texts on a black screen and let players read it. Often during the game jams, people don&amp;rsquo;t tend to read them.&lt;/p&gt;
+&lt;p&gt;By visually expressing the story, we had to consider different factors that could influence how the players think and join in. Methods of visual representations include, but not limited to: color, shape, complexity, etc. Not only that, visual representation isn&amp;rsquo;t the only way to tell the story. As we had voicelines prepared for our story telling, we also had to carefully watch out for our tone, the language we use and the pace to better explain the story. In addition, sequence also matters a lot in bringing an amusing story, i.e. having a exposition, rising action, climax, falling action and so on&amp;hellip;&lt;/p&gt;
+&lt;p&gt;All of these factors had to be carefully constructed together to create harmony. Obviously, with our inexperience with story telling and time constraints, we didn&amp;rsquo;t have enough time to think of them all.&lt;/p&gt;
+&lt;h3 id=&#34;puzzle-mechanics&#34;&gt;Puzzle Mechanics&lt;/h3&gt;
+&lt;p&gt;Making a puzzle game requires a lot of thinking, as we had to come up with a creative solution every puzzle level. With that being said, we also didn&amp;rsquo;t want to make the puzzles too difficult. Games in game jams should be simple to play and have fun. We wanted everyone to play the game through and see the ending (that we spent so much time to create).&lt;/p&gt;
+&lt;p&gt;Something that I think we could&amp;rsquo;ve done in addition is to incorporate story aspects throughout the puzzle levels. Looking back at the game now, it seems like the puzzle gameplay is completely separated from the story. Perhaps at the very least, the levels could&amp;rsquo;ve been designed in a way that it helps with the flow of the story.&lt;/p&gt;
+&lt;h3 id=&#34;parkour-mechanics&#34;&gt;Parkour Mechanics&lt;/h3&gt;
+&lt;p&gt;There are simple parkour mechanics in the game. Vaulting and climbing (and sliding, but due to the time constraints and the bugs regarding sliding, we had to remove this feature completely.). We originally wanted to incorporate more parkour mechanics with the puzzle mechanics. We figured this would make the game feel more than just a boring puzzle game, but designing a map that creatively utilizes these mechanics was too difficult. So we ended up pushing those parkour mechanics to the ending instead (when the player has to &amp;ldquo;escape&amp;rdquo; from the facility). Designing a separate area for only one specific aspect is easier than making an environment that allows more than one aspects (but again, this most likely makes the map less interactive to play).&lt;/p&gt;
+&lt;h2 id=&#34;cutscenes&#34;&gt;Cutscenes&lt;/h2&gt;
+&lt;p&gt;As briefly mentioned earlier, we did plan have dialogues with voicelines and cutscenes in the game. However, we had to cut corners. Planning / directing convincing cutscenes that allow smooth transition between gameplay and story telling requires a lot of effort. We couldn&amp;rsquo;t spend too much time doing this, as we had other things to work on. Additionally, we also didn&amp;rsquo;t have a lot of experience creating these cutscenes, so it was hard for us to deliver the story to the players. Looking back at the cutscenes right now, I can understand that it might be a bit difficult for people to understand what&amp;rsquo;s going on. Overall the pace is a bit too fast, and the details (mostly the bracelet part) aren&amp;rsquo;t highlighted enough as much as we wanted to. Maybe we could&amp;rsquo;ve done a better job with the camera angle to put the bracelet in the focus. To be fair, we had to position the camera in a way that our character&amp;rsquo;s heads don&amp;rsquo;t show up, because we didn&amp;rsquo;t want to animate the facial expressions (they can be difficult and complex to make pleasing and realistic). The cutscene that happens towards the end of the game (right before when the player has to make the final decision) is probably the best cutscene among the others. It looks visually good and tells a lot about the story. Perhaps one improvement that we could&amp;rsquo;ve done is to make the dialogue between the character and &amp;ldquo;another robot&amp;rdquo; a little more concise or more interactive. The mood ended up being less interesting as the dialogue went on. Maybe we could&amp;rsquo;ve added some hand gestures while the player is talking to the robot or some camera animations (e.g. slight tilt). At the same time, this also meant we need to spend more time on working on the animations and to be fair, we were already running out of time enough.&lt;/p&gt;
+&lt;h1 id=&#34;end-result&#34;&gt;End Result&lt;/h1&gt;
+&lt;p&gt;I would be lying if I say everything went flawlessly with the game jam. We faced game-breaking bugs very last minute of the game jam we had to fix. Our scene loader and unloader were messed up due to a small coding problem, but we quickly found the issue and resolved it. The bug that occurred during the finished build.
+Apart from that bug, I&amp;rsquo;d say the game we made was successful. There weren&amp;rsquo;t noticeable bugs in the game. For the most part, the gameplay went as we planned.&lt;/p&gt;
+&lt;p&gt;I also created a walkthrough video, in case anyone gets stuck while playing the game:
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/laCbtVfbVhw&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s a YouTube video explaining how the game is created and my thought processes behind it:
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/lzPHjSEOwVU&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;And finally, here&amp;rsquo;s the link to my game jam submission page (including the download link of the game): &lt;a class=&#34;link&#34; href=&#34;https://semikoder.itch.io/project-biobot&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://semikoder.itch.io/project-biobot&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;afterword&#34;&gt;Afterword&lt;/h1&gt;
+&lt;p&gt;Overall, participating in this game jam was a huge challenge for me. As pointed out above, things like voice acting or making cutscenes are things I&amp;rsquo;ve never done before. I&amp;rsquo;ve joined other game jams in the past, but I&amp;rsquo;ve never learned things as much as I did throughout this game jam. It was a great learning experience for me.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Polygonal Terrain Generation</title>
         <link>https://semikoder.github.io/p/polygonal-terrain-generation/</link>
         <pubDate>Fri, 19 Nov 2021 00:00:00 +0000</pubDate>
@@ -128,8 +190,7 @@ Terrain&amp;rsquo;s texture size in the pictures below have 200x200. Terrain tex
 			alt=&#34;railroad; source: https://www.songho.ca/math/homogeneous/homogeneous.html&#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;railroad; source: &lt;a class=&#34;link&#34; href=&#34;https://www.songho.ca/math/homogeneous/homogeneous.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.songho.ca/math/homogeneous/homogeneous.html&lt;/a&gt;&lt;/figcaption&gt;
+	&lt;figcaption&gt;railroad; source: &lt;a href=&#34;https://www.songho.ca/math/homogeneous/homogeneous.html&#34;&gt;https://www.songho.ca/math/homogeneous/homogeneous.html&lt;/a&gt;&lt;/figcaption&gt;
 	
 &lt;/figure&gt;
 In contrast to Euclidean geometry (three-dimensional space), projective geometry introduces another Z dimension, called W, in which it is used to describe the distance from the projector to the screen.&lt;/p&gt;
@@ -160,8 +221,7 @@ This process should be done by taking a polygonal model as input and generate a 
 			alt=&#34;edge contraction; source: https://www.cs.cmu.edu/~./garland/Papers/quadrics.pdf&#34;&gt;
 	&lt;/a&gt;
 	
-	&lt;figcaption&gt;edge contraction; source: &lt;a class=&#34;link&#34; href=&#34;https://www.cs.cmu.edu/~./garland/Papers/quadrics.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.cs.cmu.edu/~./garland/Papers/quadrics.pdf&lt;/a&gt;&lt;/figcaption&gt;
+	&lt;figcaption&gt;edge contraction; source: &lt;a href=&#34;https://www.cs.cmu.edu/~./garland/Papers/quadrics.pdf&#34;&gt;https://www.cs.cmu.edu/~./garland/Papers/quadrics.pdf&lt;/a&gt;&lt;/figcaption&gt;
 	
 &lt;/figure&gt;
 Iterative edge contraction is an algorithm, in which it stands for the foundation for quadric error metrics surface simplification. 
@@ -761,7 +821,7 @@ I ended up not buying a server at all. This also contributed to the end of this 
 	
 &lt;/figure&gt;
 (The character is t-posing because the animation synchronization was still in progress. I just noticed the character looks small&amp;hellip;)&lt;/p&gt;
-&lt;p&gt;I also made a login system using &lt;em&gt;&amp;ldquo;Database Control (Free)&amp;rdquo;&lt;/em&gt; which I downloaded through Unity&amp;rsquo;s asset store. It was a free solution for me to create a login database system. This, however, does not have any encryption to the database whatsoever, meaning that there&amp;rsquo;s a high risk of it getting hacked/leaked to the public. I wasn&amp;rsquo;t concerned about the whole security part, though. I eventually wanted to upgrade it to a more safer solution once I earn some money through the game I published.&lt;/p&gt;
+&lt;p&gt;I also made a login system using &lt;em&gt;&amp;ldquo;Database Control (Free)&amp;quot;&lt;/em&gt; which I downloaded through Unity&amp;rsquo;s asset store. It was a free solution for me to create a login database system. This, however, does not have any encryption to the database whatsoever, meaning that there&amp;rsquo;s a high risk of it getting hacked/leaked to the public. I wasn&amp;rsquo;t concerned about the whole security part, though. I eventually wanted to upgrade it to a more safer solution once I earn some money through the game I published.&lt;/p&gt;
 &lt;p&gt;&lt;figure 
 	
 		class=&#34;gallery-image&#34; 
