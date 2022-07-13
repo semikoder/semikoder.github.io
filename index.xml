@@ -12,7 +12,7 @@
         <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
         
         <guid>https://semikoder.github.io/p/project-biobot/</guid>
-        <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+        <description>&lt;img src="https://semikoder.github.io/polygonal_terrain_generation_1.png" alt="Featured image of post Project BioBot" /&gt;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;A month ago, I joined a game jam that lasted for 8 days (&lt;a class=&#34;link&#34; href=&#34;https://itch.io/jam/goedware-game-jam-5%29&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://itch.io/jam/goedware-game-jam-5)&lt;/a&gt;. However, I participated with some of my friends rather than alone. We ended up in a team of 4, all enthusiastic about the game jam.&lt;/p&gt;
 &lt;h1 id=&#34;brainstorming&#34;&gt;Brainstorming&lt;/h1&gt;
@@ -34,11 +34,87 @@
 &lt;p&gt;All of these factors had to be carefully constructed together to create harmony. Obviously, with our inexperience with story telling and time constraints, we didn&amp;rsquo;t have enough time to think of them all.&lt;/p&gt;
 &lt;h3 id=&#34;puzzle-mechanics&#34;&gt;Puzzle Mechanics&lt;/h3&gt;
 &lt;p&gt;Making a puzzle game requires a lot of thinking, as we had to come up with a creative solution every puzzle level. With that being said, we also didn&amp;rsquo;t want to make the puzzles too difficult. Games in game jams should be simple to play and have fun. We wanted everyone to play the game through and see the ending (that we spent so much time to create).&lt;/p&gt;
-&lt;p&gt;Something that I think we could&amp;rsquo;ve done in addition is to incorporate story aspects throughout the puzzle levels. Looking back at the game now, it seems like the puzzle gameplay is completely separated from the story. Perhaps at the very least, the levels could&amp;rsquo;ve been designed in a way that it helps with the flow of the story.&lt;/p&gt;
+&lt;p&gt;Something that I think we could&amp;rsquo;ve done in addition is to incorporate story aspects throughout the puzzle levels. Looking back at the game now, it seems like the puzzle gameplay is completely separated from the story. Perhaps at the very least, the levels could&amp;rsquo;ve been designed in a way that it helps with the flow of the story.
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 195; 
+			flex-basis: 469px&#34;
+	&gt;
+	&lt;a href=&#34;https://semikoder.github.io/p/project-biobot/gameplay1.png&#34; data-size=&#34;1920x982&#34;&gt;
+		&lt;img src=&#34;https://semikoder.github.io/p/project-biobot/gameplay1.png&#34;
+			width=&#34;1920&#34;
+			height=&#34;982&#34;
+			srcset=&#34;https://semikoder.github.io/p/project-biobot/gameplay1_hu4db9e32bd9daadfa4a3cbe9d8b2ae31d_1202097_480x0_resize_box_3.png 480w, https://semikoder.github.io/p/project-biobot/gameplay1_hu4db9e32bd9daadfa4a3cbe9d8b2ae31d_1202097_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Puzzle Gameplay&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Puzzle Gameplay&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 195; 
+			flex-basis: 469px&#34;
+	&gt;
+	&lt;a href=&#34;https://semikoder.github.io/p/project-biobot/gameplay2.png&#34; data-size=&#34;1920x982&#34;&gt;
+		&lt;img src=&#34;https://semikoder.github.io/p/project-biobot/gameplay2.png&#34;
+			width=&#34;1920&#34;
+			height=&#34;982&#34;
+			srcset=&#34;https://semikoder.github.io/p/project-biobot/gameplay2_hudfc0ba37b6e74a2302f53533fd8926d7_1447506_480x0_resize_box_3.png 480w, https://semikoder.github.io/p/project-biobot/gameplay2_hudfc0ba37b6e74a2302f53533fd8926d7_1447506_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Puzzle Gameplay 2&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Puzzle Gameplay 2&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;parkour-mechanics&#34;&gt;Parkour Mechanics&lt;/h3&gt;
 &lt;p&gt;There are simple parkour mechanics in the game. Vaulting and climbing (and sliding, but due to the time constraints and the bugs regarding sliding, we had to remove this feature completely.). We originally wanted to incorporate more parkour mechanics with the puzzle mechanics. We figured this would make the game feel more than just a boring puzzle game, but designing a map that creatively utilizes these mechanics was too difficult. So we ended up pushing those parkour mechanics to the ending instead (when the player has to &amp;ldquo;escape&amp;rdquo; from the facility). Designing a separate area for only one specific aspect is easier than making an environment that allows more than one aspects (but again, this most likely makes the map less interactive to play).&lt;/p&gt;
 &lt;h2 id=&#34;cutscenes&#34;&gt;Cutscenes&lt;/h2&gt;
-&lt;p&gt;As briefly mentioned earlier, we did plan have dialogues with voicelines and cutscenes in the game. However, we had to cut corners. Planning / directing convincing cutscenes that allow smooth transition between gameplay and story telling requires a lot of effort. We couldn&amp;rsquo;t spend too much time doing this, as we had other things to work on. Additionally, we also didn&amp;rsquo;t have a lot of experience creating these cutscenes, so it was hard for us to deliver the story to the players. Looking back at the cutscenes right now, I can understand that it might be a bit difficult for people to understand what&amp;rsquo;s going on. Overall the pace is a bit too fast, and the details (mostly the bracelet part) aren&amp;rsquo;t highlighted enough as much as we wanted to. Maybe we could&amp;rsquo;ve done a better job with the camera angle to put the bracelet in the focus. To be fair, we had to position the camera in a way that our character&amp;rsquo;s heads don&amp;rsquo;t show up, because we didn&amp;rsquo;t want to animate the facial expressions (they can be difficult and complex to make pleasing and realistic). The cutscene that happens towards the end of the game (right before when the player has to make the final decision) is probably the best cutscene among the others. It looks visually good and tells a lot about the story. Perhaps one improvement that we could&amp;rsquo;ve done is to make the dialogue between the character and &amp;ldquo;another robot&amp;rdquo; a little more concise or more interactive. The mood ended up being less interesting as the dialogue went on. Maybe we could&amp;rsquo;ve added some hand gestures while the player is talking to the robot or some camera animations (e.g. slight tilt). At the same time, this also meant we need to spend more time on working on the animations and to be fair, we were already running out of time enough.&lt;/p&gt;
+&lt;p&gt;As briefly mentioned earlier, we did plan have dialogues with voicelines and cutscenes in the game. However, we had to cut corners. Planning / directing convincing cutscenes that allow smooth transition between gameplay and story telling requires a lot of effort. We couldn&amp;rsquo;t spend too much time doing this, as we had other things to work on. Additionally, we also didn&amp;rsquo;t have a lot of experience creating these cutscenes, so it was hard for us to deliver the story to the players. Looking back at the cutscenes right now, I can understand that it might be a bit difficult for people to understand what&amp;rsquo;s going on. Overall the pace is a bit too fast, and the details (mostly the bracelet part) aren&amp;rsquo;t highlighted enough as much as we wanted to. Maybe we could&amp;rsquo;ve done a better job with the camera angle to put the bracelet in the focus. To be fair, we had to position the camera in a way that our character&amp;rsquo;s heads don&amp;rsquo;t show up, because we didn&amp;rsquo;t want to animate the facial expressions (they can be difficult and complex to make pleasing and realistic). The cutscene that happens towards the end of the game (right before when the player has to make the final decision) is probably the best cutscene among the others. It looks visually good and tells a lot about the story. Perhaps one improvement that we could&amp;rsquo;ve done is to make the dialogue between the character and &amp;ldquo;another robot&amp;rdquo; a little more concise or more interactive. The mood ended up being less interesting as the dialogue went on. Maybe we could&amp;rsquo;ve added some hand gestures while the player is talking to the robot or some camera animations (e.g. slight tilt). At the same time, this also meant we need to spend more time on working on the animations and to be fair, we were already running out of time enough.
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 195; 
+			flex-basis: 469px&#34;
+	&gt;
+	&lt;a href=&#34;https://semikoder.github.io/p/project-biobot/cutscene1.png&#34; data-size=&#34;1920x982&#34;&gt;
+		&lt;img src=&#34;https://semikoder.github.io/p/project-biobot/cutscene1.png&#34;
+			width=&#34;1920&#34;
+			height=&#34;982&#34;
+			srcset=&#34;https://semikoder.github.io/p/project-biobot/cutscene1_hudcfb085fa63372bd5af491a01f9853bf_756843_480x0_resize_box_3.png 480w, https://semikoder.github.io/p/project-biobot/cutscene1_hudcfb085fa63372bd5af491a01f9853bf_756843_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Cutscene 1&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Cutscene 1&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 195; 
+			flex-basis: 469px&#34;
+	&gt;
+	&lt;a href=&#34;https://semikoder.github.io/p/project-biobot/cutscene2.png&#34; data-size=&#34;1920x982&#34;&gt;
+		&lt;img src=&#34;https://semikoder.github.io/p/project-biobot/cutscene2.png&#34;
+			width=&#34;1920&#34;
+			height=&#34;982&#34;
+			srcset=&#34;https://semikoder.github.io/p/project-biobot/cutscene2_huc2b7264c47fd42dde4cb8accaa23d336_2217524_480x0_resize_box_3.png 480w, https://semikoder.github.io/p/project-biobot/cutscene2_huc2b7264c47fd42dde4cb8accaa23d336_2217524_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;Cutscene 2&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Cutscene 2&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id=&#34;end-result&#34;&gt;End Result&lt;/h1&gt;
 &lt;p&gt;I would be lying if I say everything went flawlessly with the game jam. We faced game-breaking bugs very last minute of the game jam we had to fix. Our scene loader and unloader were messed up due to a small coding problem, but we quickly found the issue and resolved it. The bug that occurred during the finished build.
 Apart from that bug, I&amp;rsquo;d say the game we made was successful. There weren&amp;rsquo;t noticeable bugs in the game. For the most part, the gameplay went as we planned.&lt;/p&gt;
